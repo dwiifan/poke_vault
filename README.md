@@ -69,8 +69,6 @@ Jika ingin generate ulang icon aplikasi:
 
 # Running Tests
 
-Project ini memiliki **Unit Test** .
-
 Menjalankan test:
 - flutter test test/presentation/providers/pokemon_list_provider_test.dart
 
