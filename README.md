@@ -40,20 +40,23 @@ Sebelum menjalankan aplikasi, pastikan environment berikut tersedia:
 Ikuti langkah berikut untuk menjalankan project.
 
 ## 1. Clone Repository
-git clone https://github.com/yourusername/pokemon_app.git
+
+- git clone https://github.com/yourusername/pokemon_app.git
 
 Masuk ke folder project:
+- cd pokemon_app
 
 ---
 
 ## 2. Install Dependencies
-flutter pub get
+- flutter pub get
+
 ---
 
 ## 3. Run Application
 
 Pastikan emulator menggunakan **API 33+**
-flutter run
+- flutter run
 
 ---
 
@@ -69,7 +72,7 @@ dart run flutter_launcher_icons
 Project ini memiliki **Unit Test** .
 
 Menjalankan test:
-flutter test test/presentation/providers/pokemon_list_provider_test.dart
+- flutter test test/presentation/providers/pokemon_list_provider_test.dart
 
 ---
 
