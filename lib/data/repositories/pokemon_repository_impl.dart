@@ -3,8 +3,6 @@ import '../../domain/entities/pokemon_list_item_entity.dart';
 import '../../domain/repositories/pokemon_repository.dart';
 import '../datasources/pokemon_local_datasource.dart';
 import '../datasources/pokemon_remote_datasource.dart';
-import '../models/pokemon_detail_model.dart';
-import '../models/pokemon_list_item_model.dart';
 
 class PokemonRepositoryImpl implements PokemonRepository {
   final PokemonRemoteDatasource remoteDatasource;
@@ -43,7 +41,7 @@ class PokemonRepositoryImpl implements PokemonRepository {
   Future<PokemonDetailEntity> getPokemonDetail(String nameOrId) async {
     try {
       final result = await remoteDatasource.getPokemonDetail(nameOrId);
-      await localDatasource.cachePokemonDetail(result as PokemonDetailModel);
+      await localDatasource.cachePokemonDetail(result);
       return result;
     } catch (_) {
       final cached = localDatasource.getCachedPokemonDetail(nameOrId);

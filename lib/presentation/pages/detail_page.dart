@@ -157,57 +157,60 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                       ),
                       child: SingleChildScrollView(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              'Stats',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 180),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                'Stats',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 12),
-                            StatRow(label: 'HP', value: pokemon.hp),
-                            StatRow(label: 'Attack', value: pokemon.attack),
-                            StatRow(label: 'Defense', value: pokemon.defense),
-                            const SizedBox(height: 24),
-                            const Text(
-                              'Types',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
+                              const SizedBox(height: 12),
+                              StatRow(label: 'HP', value: pokemon.hp),
+                              StatRow(label: 'Attack', value: pokemon.attack),
+                              StatRow(label: 'Defense', value: pokemon.defense),
+                              const SizedBox(height: 24),
+                              const Text(
+                                'Types',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 12),
-                            Wrap(
-                              spacing: 8,
-                              runSpacing: 8,
-                              children: pokemon.types
-                                  .map((type) => TypeChip(label: type))
-                                  .toList(),
-                            ),
-                            const SizedBox(height: 24),
-                            const Text(
-                              'Abilities',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
+                              const SizedBox(height: 12),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                children: pokemon.types
+                                    .map((type) => TypeChip(label: type))
+                                    .toList(),
                               ),
-                            ),
-                            const SizedBox(height: 12),
-                            Wrap(
-                              spacing: 8,
-                              runSpacing: 8,
-                              children: pokemon.abilities
-                                  .map(
-                                    (ability) => Chip(
-                                      label: Text(ability.toUpperCase()),
-                                    ),
-                                  )
-                                  .toList(),
-                            ),
-                          ],
+                              const SizedBox(height: 24),
+                              const Text(
+                                'Abilities',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                children: pokemon.abilities
+                                    .map(
+                                      (ability) => Chip(
+                                        label: Text(ability.toUpperCase()),
+                                      ),
+                                    )
+                                    .toList(),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -220,7 +223,7 @@ class _DetailPageState extends State<DetailPage> {
       floatingActionButton: pokemon == null
           ? null
           : Padding(
-              padding: const EdgeInsets.only(top: 120),
+              padding: const EdgeInsets.only(top: 220),
               child: Image.network(
                 pokemon.imageUrl,
                 width: 180,

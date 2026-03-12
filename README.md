@@ -1,4 +1,4 @@
-# pokemon_app
+# Pokemon
 
 A new Flutter project.
 
