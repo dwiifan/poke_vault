@@ -18,6 +18,7 @@ Aplikasi ini dibuat sebagai **technical assessment Flutter Developer** dengan fo
 <p align="center">
   <img src="docs/splash.png" width="300">
   <img src="docs/home.png" width="300">
+  <img src="docs/detail.png" width="300">
 </p>
 
 ---
