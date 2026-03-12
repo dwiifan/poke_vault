@@ -63,7 +63,7 @@ Pastikan emulator menggunakan **API 33+**
 ## 4. Generate App Icon (Optional)
 
 Jika ingin generate ulang icon aplikasi:
-dart run flutter_launcher_icons
+- dart run flutter_launcher_icons
 
 ---
 
@@ -158,10 +158,10 @@ Provider yang digunakan:
 # Networking
 
 Networking menggunakan package:
-    http
+- http
 
 API yang digunakan:
-    https://pokeapi.co
+- https://pokeapi.co
 
 ---
 
