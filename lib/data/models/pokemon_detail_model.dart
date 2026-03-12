@@ -30,7 +30,7 @@ class PokemonDetailModel extends PokemonDetailEntity {
 
     return PokemonDetailModel(
       id: json['id'] ?? 0,
-      name: json['name'] ?? '',
+      name: (json['name'] ?? '').toString().toLowerCase(),
       imageUrl:
           json['sprites']?['other']?['official-artwork']?['front_default'] ??
           '',

@@ -1,17 +1,87 @@
-# Pokemon
+# Poke Vault
 
-A new Flutter project.
+Poke Vault adalah aplikasi Flutter yang menampilkan daftar Pokémon menggunakan **PokeAPI**.  
+Aplikasi ini dibuat sebagai **technical assessment Flutter Developer** dengan fokus pada arsitektur bersih, state management, offline storage, dan testing.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Developer
 
-A few resources to get you started if this is your first Flutter project:
+**Dwi Ifan Ramadhan**
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirement
+
+Sebelum menjalankan aplikasi, pastikan environment berikut tersedia:
+
+- Flutter SDK
+- Dart SDK
+- Android Studio / VS Code
+- Emulator Android
+
+⚠️ **Emulator harus menggunakan Android API 33 atau lebih tinggi**
+
+---
+
+## Features
+
+- Pokémon List (Pagination)
+- Pokémon Detail
+- Search Pokémon
+- Pull to Refresh
+- Offline Cache (Hive)
+- Shimmer Loading
+- Error Handling
+- Unit Test
+
+---
+
+## App Preview
+
+### Splash Screen
+
+<img src="docs/splash.png" width="300">
+
+### Home Screen
+
+<img src="docs/home.png" width="300">
+
+---
+
+## Architecture
+
+Project ini menggunakan **Layered Architecture**
+
+---
+
+## Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/yourusername/pokemon_app.git
+
+---
+
+Masuk ke folder project:
+    cd pokemon_app
+
+---
+
+Install dependencies:
+    flutter pub get
+
+---
+
+Jalankan aplikasi dengan:
+    flutter run
+
+⚠️ **Emulator harus menggunakan Android API 33 atau lebih tinggi**
+
+---
+
+Testing :
+
+Menjalankan test
+    flutter test test/presentation/providers/pokemon_list_provider_test.dart

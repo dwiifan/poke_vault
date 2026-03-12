@@ -23,13 +23,14 @@ class PokemonRepositoryImpl implements PokemonRepository {
         limit: limit,
         offset: offset,
       );
-
+      print('Fetch from API success');
       if (offset == 0) {
         await localDatasource.cachePokemonList(result);
       }
 
       return result;
     } catch (_) {
+      print('Load from cache');
       if (offset == 0) {
         return localDatasource.getCachedPokemonList();
       }
