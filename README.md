@@ -148,8 +148,8 @@ Aplikasi menggunakan **Provider** karena:
 - mudah diintegrasikan dengan Flutter
 
 Provider yang digunakan:
-    PokemonListProvider
-    PokemonDetailProvider
+- PokemonListProvider
+- PokemonDetailProvider
 
 ---
 
